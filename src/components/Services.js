@@ -6,13 +6,13 @@ function Card(props) {
         <>
        
         <div className="lg:w-1/3 md:w-1/2 p-4 w-full">
-            <div className="card  ">
+            <div className="card  bg-gray-200 p-4">
                 <figure className='p-0'>
                     <a className="block relative h-58 rounded overflow-hidden">
                         <img alt="ecommerce" className="object-cover object-center w-full h-full block" src={props.image} />
                     </a>
                 </figure>
-                <div className="card-body p-4">
+                <div className="card-body bg-gray-100 p-4">
                     <h2 className="card-title ">{props.content}</h2>
                     <p> 
                     {props.paragrph}
