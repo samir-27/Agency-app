@@ -1,21 +1,17 @@
 import React from 'react';
 
-const images = ["https://img.freepik.com/free-photo/colorful-powder-explosion-happy-holi-festival-colors-art-concept_90220-1170.jpg?size=626&      ext=jpg&ga=GA1.2.294008381.1679708343&semt=sph",
-    "https://img.freepik.com/premium-photo/beautiful-female-90s-stylish-shirt-rapeseed-field_87910-16352.jpg",
-    "https://img.freepik.com/premium-vector/vector-illustration-mushrooms-abstract-graphic_2500-73.jpg?size=626&ext=jpg",
-    "https://img.freepik.com/free-vector/glowing-musical-pentagram-background-with-sound-notes_1017-31220.jpg?size=626&ext=jpg&ga=GA1.2.294008381.1679708343&semt=sph",
-    "https://img.freepik.com/premium-photo/glowing-neon-sign-with-words-karaoke-party-brick-wall_495423-52971.jpg?size=626&ext=jpg&ga=GA1.2.294008381.1679708343&semt=sph",
-    "https://img.freepik.com/free-photo/colorful-powder-explosion-happy-holi-festival-colors-art-concept_90220-1170.jpg?size=626&ext=jpg&ga=GA1.2.294008381.1679708343&semt=sph",
-    "https://img.freepik.com/free-photo/colorful-powder-explosion-happy-holi-festival-colors-art-concept_90220-1170.jpg?size=626&ext=jpg&ga=GA1.2.294008381.1679708343&semt=sph",
-    "https://img.freepik.com/free-photo/colorful-powder-explosion-happy-holi-festival-colors-art-concept_90220-1170.jpg?size=626&ext=jpg&ga=GA1.2.294008381.1679708343&semt=sph",
-    "https://img.freepik.com/free-photo/colorful-powder-explosion-happy-holi-festival-colors-art-concept_90220-1170.jpg?size=626&ext=jpg&ga=GA1.2.294008381.1679708343&semt=sph",];
+const images = ["./images/gallary/img1.avif",
+"./images/gallary/img2.avif",
+"./images/gallary/img3.avif",
+"./images/gallary/img4.avif",
+"./images/gallary/img5.avif",
+"./images/gallary/img6.avif",
+ ];
 
 
 function SmImg(props) {
     return (
-
-   
-                <div className={props.DivClasses}>
+                <div className={props.DivClasses}>                
                     <img
                         alt="gallery"
                         className={props.ImgClasses}
@@ -28,40 +24,44 @@ function SmImg(props) {
 const Portfolio = () => {
     return (
         <>
+  <div className="flex flex-col text-center w-full my-16">
+                        <h1 className="sm:text-6xl text-5xl md:text-6xl lg:text-7xl font-medium title-font m-4  text-gray-900"><span className='text-cyan-500 '>Ga</span>llary</h1>   <hr class="border-2 border-cyan-500  mx-auto w-1/2"/>                   
+                    </div>
+
         <section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+  <div class="container px-5  mx-auto flex flex-wrap">
             <div className="flex flex-wrap w-1/2">
                 <SmImg
-                    DivClasses="md:p-2 p-1 lg:w-1/2 w-full"
-                    ImgClasses="w-full object-cover h-full object-center block"
+                    DivClasses="md:p-2 p-1 lg:w-1/2 w-full "
+                    ImgClasses="w-full object-cover h-full border-2 lg:border-4 border-cyan-500 p-1 object-center block"
                     image={images[0]}
                 />
                 <SmImg
-                    DivClasses="md:p-2 p-1 lg:w-1/2 w-full"
-                    ImgClasses="w-full object-cover h-full object-center block"
+                    DivClasses="md:p-2 p-1 lg:w-1/2 w-full "
+                    ImgClasses="w-full object-cover h-full border-2 lg:border-4 border-cyan-500 p-1 object-center block"
                     image={images[1]}
                 />
                 <SmImg
-                    DivClasses="md:p-2 p-1 w-full"
-                    ImgClasses="w-full h-full object-cover object-center block"
+                    DivClasses="md:p-2 p-1 w-full "
+                    ImgClasses="w-full h-full object-cover border-2 lg:border-4 border-cyan-500 p-1 object-center block"
                     image={images[2]}
                 />
             </div>
             <div className="flex flex-wrap w-1/2">
                 <SmImg
-                    DivClasses="md:p-2 p-1 w-full"
-                    ImgClasses="w-full h-full object-cover object-center block"
+                    DivClasses="md:p-2 p-1 w-full "
+                    ImgClasses="w-full h-full object-cover border-2 lg:border-4 border-cyan-500 p-1 object-center block"
                     image={images[3]}
                 />
                <SmImg
-                    DivClasses="md:p-2 p-1 lg:w-1/2 w-full"
-                    ImgClasses="w-full object-cover h-full object-center block"
-                    image={images[0]}
+                    DivClasses="md:p-2 p-1 lg:w-1/2 w-full "
+                    ImgClasses="w-full object-cover h-full border-2 lg:border-4 border-cyan-500 p-1 object-center block"
+                    image={images[4]}
                 />
                 <SmImg
-                    DivClasses="md:p-2 p-1 lg:w-1/2 w-full"
-                    ImgClasses="w-full object-cover h-full object-center block"
-                    image={images[1]}
+                    DivClasses="md:p-2 p-1 lg:w-1/2 w-full "
+                    ImgClasses="w-full object-cover h-full border-2 lg:border-4 border-cyan-500 p-1 object-center block"
+                    image={images[5]}
                 />
             
            
